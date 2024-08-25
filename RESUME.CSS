@@ -161,9 +161,9 @@ ol{
 }
 
 .navigator{
-    height: 350px;
-    width: 350px;
-    background:url(ICONS/moon.jpg);
+    height: 300px;
+    width: 300px;
+
     position: absolute;
     top: 28%;
     left: 40%;
@@ -196,6 +196,3 @@ ol{
     }
 }
 
-.moon{
-    box-shadow: 5px 5px 5px 10px rgba(126, 31, 31, 0.797)
-}
