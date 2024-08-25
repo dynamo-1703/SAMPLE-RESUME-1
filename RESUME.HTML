@@ -7,24 +7,108 @@
 </head>
 <link rel="stylesheet" href="RESUME.CSS">
 <body>
+    <div class="sky">
     <div class="banner">
-        <div class="top-left">Details</div>
-        <div class="top-left-content"></div>
+        <div class="star"></div>
+        <div class="intro">
+            This Is My Resume
+        </div>
 
-        <div class="top-right">Languages</div>
-        <div class="top-right-content"></div>
+        <div class="navigator"></div>
+        <div class="top-left"> <div class="settings2"></div>Details<div class="settting"></div></div>
 
-        <div class="navigator">navigator</div>
+        <div class="top-left-content">
+            <ol>
+                <li>Name: Gopal Garg</li>
+                <li>Age:18</li>
+                <li>Adress: Mansa 151505</li>
+                <li>Education: B.TECH (ICE) NIT JALANDHAR </li>
+                <LI>Hobbies: Basketball , Table-tennis</LI>
+            </ol>
+
+        </div>
+
+        <div class="top-right">Languages
+            <div style="
+            height: 10px;
+            width: 70px;
+            "></div>
+            
+        </div>
+        <div class="top-right-content">
+            <OL>
+                <LI>HTML</LI>
+                <LI>CSS</LI>
+                <LI>JAVASCRIPT</LI>
+                <LI>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, voluptas?</LI>
+            </OL>
+        </div>
+        <div></div>
         
-        <div class="bottom-right">projects</div>
-        <div class="bottom-right-content"></div>
+        <div class="bottom-right">
+            Projects
+            <div style="
+            height: 10px;
+            width: 90px;
+            "></div>
+        </div>
+        <div class="bottom-right-content">
+            <ol>
+                <li>Youtube-index</li>
+                <li>Gmail.index</li>
+                <li>Rotating Soda Can</li>
+                <li>3D Rotating card</li>
+            </ol>
+        </div>
 
-        <div class="bottom-left">Contacts</div> 
-        <div class="bottom-left-content"></div>
+
+        <div class="bottom-left">
+            <div style="
+                height: 10px;
+                width: 80px;
+                ">
+            </div>
+            Contacts
+        </div> 
+        <div class="bottom-left-content">
+            <ol>
+                <li>Phone No - 9417900038</li>
+                <li>Email Adress - Gargopal2020@gmail.com</li>
+                <li>Github - Dynamo@1703 </li>
+                <li>Instagram - Gopal_.Garg</li>
+            </ol>
+        </div>
+
     </div>
+</div>
 
-    <script src="RESUME.JS" defer>
-    </script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const sky = document.querySelector('.sky');
+    const numStars = 150; // Number of stars you want
+
+    for (let i = 0; i < numStars; i++) {
+        let star = document.createElement('div');
+        star.className = 'star';
+
+        // Random size between 1px and 4px
+        let size = Math.random() * 3 + 1 + 'px';
+        star.style.width = size;
+        star.style.height = size;
+
+        // Random position on the page
+        star.style.top = Math.random() * 100 + 'vh';
+        star.style.left = Math.random() * 100 + 'vw';
+
+        // Random animation delay for twinkling effect
+        star.style.animationDelay = Math.random() * 5 + 's';
+
+        // Append the star to the sky
+        sky.appendChild(star);
+    }
+});
+
+</script>
 
 </body>
 </html>
